@@ -1,0 +1,5 @@
+{
+    "pretender.js" : [
+        "node_modules/pretender/dist/pretender.bundle.js"
+    ]
+}

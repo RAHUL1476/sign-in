@@ -1,0 +1,126 @@
+@lyteDrawerWidth: 200px;
+@lyteDrawerMiniVariantWidth: 50px;
+@lyteDrawerTransitionDuration: 2s;
+
+.lyteDrawerMixin() {
+	@max-h: 500px;
+	@border: 1px solid #ddd;
+}
+.drawerPanelMixin() {
+	@w: @lyteDrawerWidth;
+}
+.lyteDrawerGroupMixin() {
+	@border-bottom: 1px solid #d6d6d6;
+	@margin-bottom: 20px;
+	@padding-bottom: 7px;
+}
+.lyteDrawerGroupLastOfTypeMixin() {
+	@border-bottom: 0;
+	@margin-bottom: 0;
+	@padding-bottom: 0;
+}
+.drawerLabelMixin() {
+	@padding: 10px 10px 3px;
+	@font-size: 15px;
+}
+.drawerItemMixin() {
+	@color: @drawerTextColor;
+	@padding: 8px 12px;
+	@font-size: 15px;
+	@margin: 5px 0;
+}
+.drawerItemhoverMixin() {
+	@bg: #eee;
+}
+.DrawerActiveItemMixin() {
+	@bg: @drawerActiveBg;
+	@color: #fff;
+}
+.DrawerDisabledItemMixin() {
+	@opacity: 0.5;
+	@bg: @drawerDisabledItemBg;
+}
+.lyteDrawerContentMixin() {
+	@flex: 1;
+	@padding: 40px 15px;
+}
+.drawerFreezeMixin() {
+	@z-index: 5;
+	@bg: @drawerFreezeBg;
+	@transition: opacity @lyteDrawerTransitionDuration ease;
+	@left: 0;
+	@top: 0;
+	@bottom: 0;
+	@right: 0;
+	@opacity: 0;
+}
+.lyteDrawerFreezeLayerShownMixin() {
+	@opacity: 0.3;
+}
+.lyteDrawerInlineBodyDrawerPanelMixin() {
+	@transition: transform @lyteDrawerTransitionDuration ease;
+	@top: 0;
+	@bottom: 0;
+	@bg: #fff;
+	@z-index: 10;
+}
+.lyteDrawerInlineBodyLeftPanelMixin() {
+	@left: 0;
+	@transform: translateX(-100%);
+}
+.lyteDrawerInlineBodyRightPanelMixin() {
+	@right: 0;
+	@transform: translateX(100%);
+}
+.lyteDrawerShownPanelMixin() {
+	@transform: translateX(0);
+}
+.lyteDrawerInlineDisplaceContentMixin() {
+	@transition: margin @lyteDrawerTransitionDuration ease;
+	@margin-left: 0;
+	@margin-right: 0;
+}
+.lyteDrawerInlineDisplacePanelLeftContentMixin() {
+	@margin-left: 200px;
+}
+.lyteDrawerInlineDisplacePanelRightContentMixin() {
+	@margin-right: 200px;
+}
+.lyteDrawerInlineMiniVariantPanelMixin() {
+	@w: @lyteDrawerMiniVariantWidth;
+	@transition: width @lyteDrawerTransitionDuration ease;
+	@border-right: 1px solid #ddd;
+	@transform: translateX(0);
+}
+.lyteDrawerMiniVariantPanelExpandedMixin() {
+	@w: @lyteDrawerWidth;
+}
+.lyteDrawerMiniVariantWrapperMixin() {
+	@w: 100%;
+}
+.lyteDrawerCloseIconWrapMixin() {
+	@h: 15px;
+	@w: 15px;
+}
+.lyteDrawerCloseIconMixin() {
+	@border: 2px solid #ccc;
+	@w: 10px;
+	@h: 10px;
+	@border-top: 0;
+	@border-right: 0;
+	@transform: rotate(45deg);
+}
+.lyteDrawerActionsMixin() {
+	@h: 35px;
+	@w: 100%;
+	@padding: 10px 12px;
+}
+.lyteDrawerOverlayShowMixin() {
+	@top: 0;
+	@bottom: 0;
+	@bg: #fff;
+	@z-index: 1;
+}
+.lyteDrawerMiniVariantDrawerContentMixin() {
+	@margin-left: @lyteDrawerMiniVariantWidth;
+}

@@ -1,0 +1,21 @@
+{
+ "name": "welc",
+ "version": "1.0.0",
+ "description": "Description for welc goes here",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "@zoho/lyte": "3.1.2",
+  "@zoho/lyte-dom": "2.0.12",
+  "@zoho/lyte-editor": "2.2.10",
+  "@zoho/lyte-ui-component": "3.54.1",
+  "pretender": "^3.4.7"
+ },
+ "addons": [
+  "@zoho/lyte-ui-component"
+ ],
+ "resolution": {}
+}

@@ -1,0 +1,28 @@
+<template tag-name='welcome-comp'>
+	<!-- <h1>Welcome to Lyte framework</h1>
+	<h1>Available features of LYTE</h1>
+	<ul>	
+		<%features.forEach(function(item){%>
+			<li><a href={{item.urls}} target="_blank">{{item.module}}</a></li>
+		<%})%>
+	</ul> -->
+	<div style="background-color: aqua;">
+	<div class="welc"><h1>Login Page</h1>
+	<form name="forms1">
+		<label>Enter mail-Id :  </label>
+		<input id="text1" type="text" placeholder="text" style="margin-left: 1%;"><br><br>
+		<label>Enter password : </label>
+		<input id="text2" type="text" placeholder="text"><br><br>
+		<lyte-button onclick="{{action('gty',2)}}" style="margin-left: 3%;">
+			<template is="registerYield" yield-name="text">
+				Sign in
+			</template>
+		</lyte-button>
+		<lyte-button onclick="{{action('gty',1)}}" style="margin-left: 3%;">
+			<template is="registerYield" yield-name="text">
+				Sign Up
+			</template>
+		</lyte-button>
+		<!-- <button onclick="{{action('gty')}}" type="button">check</button> -->
+	</form></div></div>
+</template>

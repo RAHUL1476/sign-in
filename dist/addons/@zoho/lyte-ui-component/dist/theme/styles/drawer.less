@@ -1,0 +1,246 @@
+
+@import "../themes/default/ui-elements/drawer/drawer.variables.less";
+
+@import "../config.less";
+
+@import (optional) "../themes/@{drawer}/ui-elements/drawer/drawer.variables.less";
+
+/* rtl files loading */
+
+@import (multiple,optional) "../themes/default/global/@{direction}.less";
+
+@import (multiple,optional) "../themes/@{drawer}/global/@{direction}.less";
+
+lyte-drawer {
+	.lyteDrawerMixin();
+	display: block;
+	position: relative;
+	max-height: @max-h;
+	border: @border;
+}
+
+.lyteSelectionWrapperBox {
+	cursor: crosshair;
+	user-select: none;
+}
+
+.lyteDrawerInlineBody {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	overflow: hidden;
+	max-height: inherit;
+}
+.lyteDrawerPanel {
+	.drawerPanelMixin();
+	overflow-y: auto;
+	width: @w;
+	max-height: inherit;
+	outline: 0;
+}
+lyte-drawer-body {
+	display: block;
+	overflow: auto;
+}
+lyte-drawer-group {
+	.lyteDrawerGroupMixin();
+	display: block;
+	border-bottom: @border-bottom;
+	margin-bottom: @margin-bottom;
+	padding-bottom: @padding-bottom;
+}
+lyte-drawer-group:last-of-type {
+	.lyteDrawerGroupLastOfTypeMixin();
+	border-bottom: @border-bottom;
+	margin-bottom: @margin-bottom;
+	padding-bottom: @padding-bottom;
+}
+lyte-drawer-label {
+	.drawerLabelMixin();
+	display: block;
+	padding: @padding;
+	font-size: @font-size;
+	font-family: @secondaryFont;
+}
+lyte-drawer-item {
+	.drawerItemMixin();
+	position: relative;
+	cursor: pointer;
+	display: block;
+	color: @color;
+	padding: @padding;
+	font-size: @font-size;
+	margin: @margin;
+	font-family: @primaryFont;
+}
+lyte-drawer-item:hover {
+	.drawerItemhoverMixin();
+	background: @bg;
+}
+lyte-drawer-item.lyteDrawerActiveItem:hover,
+.lyteDrawerActiveItem {
+	.DrawerActiveItemMixin();
+	background: @bg;
+	color: @color;
+}
+.lyteDrawerDisabledItem {
+	.DrawerDisabledItemMixin();
+	pointer-events: none;
+	opacity: @opacity;
+	background: @bg;
+}
+.lyteDrawerContent {
+	.lyteDrawerContentMixin();
+	position: relative;
+	flex: @flex;
+	padding: @padding;
+}
+lyte-drawer-freeze {
+	.drawerFreezeMixin();
+	z-index: @z-index;
+	background: @bg;
+	transition: @transition;
+	position: absolute;
+	left: @left;
+	top: @top;
+	bottom: @bottom;
+	right: @right;
+	opacity: @opacity;
+	display: none;
+}
+lyte-drawer-freeze.lyteDrawerFreezeLayerShown {
+	.lyteDrawerFreezeLayerShownMixin();
+	opacity: @opacity;
+}
+.lyteDrawerOpenElem {
+	cursor: pointer;
+	z-index: 5;
+}
+.lyteDrawerOpenElemLine {
+	width: 20px;
+	height: 2px;
+	background: #bbb;
+	border-radius: 2px;
+	margin-bottom: 3px;
+}
+.lyteDrawerOpenElemLine:last-child {
+	margin-bottom: 0;
+}
+
+.lyteDrawerInlineBody .lyteDrawerPanel {
+	.lyteDrawerInlineBodyDrawerPanelMixin();
+	transition: @transition;
+	position: absolute;
+	top: @top;
+	bottom: @bottom;
+	background: @bg;
+	z-index: @z-index;
+}
+.lyteDrawerInlineBody.lyteDrawerPanelLeft .lyteDrawerPanel {
+	.lyteDrawerInlineBodyLeftPanelMixin();
+	left: @left;
+	transform: @transform;
+}
+.lyteDrawerInlineBody.lyteDrawerPanelRight .lyteDrawerPanel {
+	.lyteDrawerInlineBodyRightPanelMixin();
+	right: @right;
+	transform: @transform;
+}
+.lyteDrawerShown.lyteDrawerInlineBody .lyteDrawerPanel {
+	.lyteDrawerShownPanelMixin();
+	transform: @transform;
+}
+
+.lyteDrawerInlineBody.lyteDrawerInlineDisplace .lyteDrawerContent {
+	.lyteDrawerInlineDisplaceContentMixin();
+	transition: @transition;
+	margin-left: @margin-left;
+	margin-right: @margin-right;
+}
+.lyteDrawerShown.lyteDrawerInlineDisplace.lyteDrawerPanelLeft .lyteDrawerContent {
+	.lyteDrawerInlineDisplacePanelLeftContentMixin();
+	margin-left: @margin-left;
+}
+.lyteDrawerShown.lyteDrawerInlineDisplace.lyteDrawerPanelRight .lyteDrawerContent {
+	.lyteDrawerInlineDisplacePanelRightContentMixin();
+	margin-right: @margin-right;
+}
+
+.lyteDrawerMiniIcon {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	background-size: 100%;
+	flex-shrink: 0;
+}
+.lyteDrawerInlineBody.lyteDrawerMiniVariant .lyteDrawerPanel {
+	.lyteDrawerInlineMiniVariantPanelMixin();
+	width: @w;
+	overflow: hidden;
+	transition: @transition;
+	border-right: @border-right;
+	transform: @transform;
+}
+.lyteDrawerShown.lyteDrawerInlineBody.lyteDrawerMiniVariant .lyteDrawerPanel {
+	.lyteDrawerMiniVariantPanelExpandedMixin();
+	width: @w;
+}
+.lyteDrawerMiniVariant lyte-drawer-body {
+	width: 100%;
+	overflow: hidden;
+}
+.lyteDrawerMiniVariant lyte-drawer-item {
+	display: flex;
+}
+.lyteDrawerMiniLabel {
+	margin-left: 10px;
+	white-space: nowrap;
+}
+.lyteDrawerMiniVariant .drawerWrapper {
+	.lyteDrawerMiniVariantWrapperMixin();
+	width: @w;
+}
+
+.lyteDrawerCloseIconWrap {
+	.lyteDrawerCloseIconWrapMixin();
+	height: @h;
+	width: @w;
+	cursor: pointer;
+}
+.lyteDrawerMiniVariant .lyteDrawerCloseIconWrap {
+	display: none;
+}
+.lyteDrawerShown.lyteDrawerMiniVariant .lyteDrawerCloseIconWrap {
+	display: block;
+}
+.lyteDrawerCloseIcon {
+	.lyteDrawerCloseIconMixin();
+	border: @border;
+	width: @w;
+	height: @h;
+	border-top: @border-top;
+	border-right: @border-right;
+	transform: @transform;
+}
+lyte-drawer-actions {
+	.lyteDrawerActionsMixin();
+	height: @h;
+	width: @w;
+	padding: @padding;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.lyteDrawerOverlayShow {
+	.lyteDrawerOverlayShowMixin();
+	position: absolute;
+	top: @top;
+	bottom: @bottom;
+	background: @bg;
+	z-index: @z-index;
+}
+.lyteDrawerInlineDisplace.lyteDrawerMiniVariant .lyteDrawerContent {
+	.lyteDrawerMiniVariantDrawerContentMixin();
+	margin-left: @margin-left;
+}
