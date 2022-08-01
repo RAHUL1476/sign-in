@@ -1,9 +1,3 @@
-/* Default theme imported */
-/* Loading theme in configuration */
-/* Themes of components */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */
 lyte-grouper {
   display: block;
 }
@@ -89,3 +83,9 @@ lyte-grouper .lyteInputBox .lyteField:hover,
 lyte-grouper .lyteInputBox .lyteField {
   border: 0;
 }
+/* Default theme imported */
+/* Loading theme in configuration */
+/* Themes of components */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */

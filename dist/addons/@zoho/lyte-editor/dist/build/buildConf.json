@@ -1,0 +1,101 @@
+{
+ "type": "development",
+ "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor": {
+  "RCSLDMap": {
+   "/users/rahul-pt5622/documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/variables.less": {
+    "keys": [
+     "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css"
+    ],
+    "json": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json"
+    ],
+    "themeOptions": [
+     {}
+    ]
+   },
+   "/users/rahul-pt5622/documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-toolbar.less": {
+    "keys": [
+     "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css"
+    ],
+    "json": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json"
+    ],
+    "themeOptions": [
+     {}
+    ]
+   },
+   "/users/rahul-pt5622/documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-layout.less": {
+    "keys": [
+     "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css"
+    ],
+    "json": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json"
+    ],
+    "themeOptions": [
+     {}
+    ]
+   },
+   "/users/rahul-pt5622/documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor.less": {
+    "keys": [
+     "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css"
+    ],
+    "json": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json"
+    ],
+    "themeOptions": [
+     {}
+    ]
+   },
+   "/users/rahul-pt5622/documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-context.less": {
+    "keys": [
+     "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/editor-context.css"
+    ],
+    "json": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json"
+    ],
+    "themeOptions": [
+     {}
+    ]
+   }
+  },
+  "CSLDMap": {
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build/less-min-conf.json": {
+    "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/variables.less",
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-toolbar.less",
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-layout.less",
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor.less"
+    ],
+    "/Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/editor-context.css": [
+     "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/css/styles/lyte-editor-context.less"
+    ]
+   }
+  },
+  "lsDirectoryFile": {},
+  "directoryFile": {},
+  "theming": true,
+  "includeStyle": true,
+  "ignoreFoldersFromCopy": [
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/routes",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/components",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/bower_components",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/mixins",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/data-store/models",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/data-store/adapters",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/data-store/serializers",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/build",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/data-store",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/node_modules",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/rules",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/package-lock.json",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/addons",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/engines",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/tests",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/xml.js",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/testApp/tests",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/synchronizer/.temp",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/templateWithOldSyntax",
+   "/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-editor/testApp"
+  ]
+ }
+}

@@ -122,43 +122,6 @@ Lyte.Router.registerRoute("index.test4",{
 // }
 });
 
-Lyte.Component.register("test-comp", {
-_template:"<template tag-name=\"test-comp\"> Hi {{features}} </template>",
-_dynamicNodes : [{"type":"text","position":[1]}],
-
-	data : function(){
-		return {
-			
-		}		
-	}
-});
-
-store.registerModel("user",{
-    id:Lyte.attr("number"),
-    brand: Lyte.attr("string"),
-    type:Lyte.attr("string"),
-    color:Lyte.attr("string"),
-    description:Lyte.attr("string"),
-    sleeve:Lyte.attr("string"),
-    size:Lyte.attr("array"),
-    price:Lyte.attr("string"),
-    iswish:Lyte.attr("boolean"),
-    cartlist:Lyte.hasMany("cartlist-product"),
-    // productcategory:Lyte.belongsTo("product-category")
-    });
-store.registerModel("user",{
-    id:Lyte.attr("number"),
-    brand: Lyte.attr("string"),
-    type:Lyte.attr("string"),
-    color:Lyte.attr("string"),
-    description:Lyte.attr("string"),
-    sleeve:Lyte.attr("string"),
-    size:Lyte.attr("array"),
-    price:Lyte.attr("string"),
-    iswish:Lyte.attr("boolean"),
-    cartlist:Lyte.hasMany("cartlist-product"),
-    // productcategory:Lyte.belongsTo("product-category")
-    });
 Lyte.Component.register("signup-comp", {
 _template:"<template tag-name=\"signup-comp\"> </template>",
 _dynamicNodes : [],
@@ -173,6 +136,17 @@ _dynamicNodes : [],
 	},
 	methods : {
 		// Functions which can be used as callback in the component.
+	}
+});
+
+Lyte.Component.register("test-comp", {
+_template:"<template tag-name=\"test-comp\"> Hi {{features}} </template>",
+_dynamicNodes : [{"type":"text","position":[1]}],
+
+	data : function(){
+		return {
+			
+		}		
 	}
 });
 
@@ -295,3 +269,29 @@ var server = new Pretender(function(){
 			return [200, {"Content-Type": "application/json"}, datad]	   
 	  });
 });
+store.registerModel("user",{
+    id:Lyte.attr("number"),
+    brand: Lyte.attr("string"),
+    type:Lyte.attr("string"),
+    color:Lyte.attr("string"),
+    description:Lyte.attr("string"),
+    sleeve:Lyte.attr("string"),
+    size:Lyte.attr("array"),
+    price:Lyte.attr("string"),
+    iswish:Lyte.attr("boolean"),
+    cartlist:Lyte.hasMany("cartlist-product"),
+    // productcategory:Lyte.belongsTo("product-category")
+    });
+store.registerModel("user",{
+    id:Lyte.attr("number"),
+    brand: Lyte.attr("string"),
+    type:Lyte.attr("string"),
+    color:Lyte.attr("string"),
+    description:Lyte.attr("string"),
+    sleeve:Lyte.attr("string"),
+    size:Lyte.attr("array"),
+    price:Lyte.attr("string"),
+    iswish:Lyte.attr("boolean"),
+    cartlist:Lyte.hasMany("cartlist-product"),
+    // productcategory:Lyte.belongsTo("product-category")
+    });

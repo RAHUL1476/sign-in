@@ -1,0 +1,42 @@
+Timing to complete init function0.002 s
+CliLocation :/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-cli
+ CliVersion 3.3.1
+Building time of addons : 0.001 s
+Building time of copyAppDir : 0.029 s
+Building components ....
+Searching for syntax errors.....
+Finding the unclosed tags compilation over
+[Time] => find unclosedTags => 0.002 s
+Running compilerule ...
+[Time] => Convert Lyte syntax => 0 s
+browser Endpoint ws://127.0.0.1:49854/devtools/browser/c23c5c53-9a38-4bcd-967e-db6041a4053e
+Browser launched
+page opened
+Post method request get caught with url/post
+Time taken for end call back be 0.227 s
+Callback function called 0 slyte-editor-toolbar,lyte-editor-layout,lyte-editor
+Time to end the dynamic nodes0.228 s
+Generating dist components...
+
+Time to end processing template0.007 s
+Building time of components : 0.239 s
+Building models ..............
+
+Building time of models : 0 s
+Building helpers .....
+[Copy] components/helpers => ../../../dist/addons/@zoho/lyte-editor/dist/components/helpers
+
+Building time of helpers : 0.002 s
+Building time of mixins : 0 s
+
+[Compiled][themes]create an css files in the outputPath /Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/lyte-editor.css
+
+[Compiled][themes]create an css files in the outputPath /Users/rahul-pt5622/Documents/test2/welc/dist/addons/@zoho/lyte-editor/dist/css/editor-context.css
+Building time of consolidate : 0.001 s
+Total Building Time : 0.291 s
+Building completed
+Consolidated file created in the ../../../dist/addons/@zoho/lyte-editor/dist/javascript/lyte-editor-layout.js
+
+Consolidated file created in the ../../../dist/addons/@zoho/lyte-editor/dist/javascript/lyte-editor.js
+
+Build sucesss

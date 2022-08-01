@@ -1,11 +1,6 @@
 /* Default theme imported */
 /* Loading theme in configuration */
 /* Themes of components */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */
-/* Default theme imported */
-/* Loading theme in configuration */
 /* rtl files loading */
 /* Loading final tweaks to your variables */
 /*  Mentions Input Related CSS Begins   */
@@ -68,7 +63,7 @@
   white-space: nowrap;
   font-size: 14px;
   padding: 5px 10px;
-  text-align: right;
+  text-align: left;
   display: flex;
   align-items: center;
 }
@@ -76,8 +71,8 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  float: right;
-  margin-left: 10px;
+  float: left;
+  margin-right: 10px;
 }
 .lyteMIDropdown lyte-mentions-item em {
   font-weight: bold;
@@ -111,11 +106,11 @@
   overflow: hidden;
   white-space: pre-wrap;
   word-wrap: break-word;
-  text-align: right;
+  text-align: left;
   line-height: 22px;
 }
 .lyteInput .lyteMentions {
-  padding-right: 0;
+  padding-left: 0;
 }
 .lyteMentionsNormalTextarea {
   top: 1px;
@@ -154,3 +149,8 @@
 /* import theme overrides - styles */
 /* import custom css - final tweaks by the user */
 /*  Mentions Input Related CSS ENDS   */
+/* Default theme imported */
+/* Loading theme in configuration */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */

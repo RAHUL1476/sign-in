@@ -1,3 +1,9 @@
+/* Default theme imported */
+/* Loading theme in configuration */
+/* Themes of components */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */
 .lyteRadioBtnGroupHorizontal {
   display: flex;
   flex-direction: row;
@@ -6,9 +12,3 @@
   display: flex;
   flex-direction: column;
 }
-/* Default theme imported */
-/* Loading theme in configuration */
-/* Themes of components */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */

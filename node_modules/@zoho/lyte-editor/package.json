@@ -1,0 +1,73 @@
+{
+  "name": "@zoho/lyte-editor",
+  "version": "2.2.10",
+  "description": "Lyte Editor is a wrapper component for monaco editor",
+  "scripts": {
+    "test": "cd testApp && npm run test",
+    "genI18nConfigsAndFiles": "node lib/builder/genI18nConfigsAndFiles.js",
+    "checkForDebuggers": "sh lib/builder/checkForDebuggers.sh",
+    "bundleDependencies": "sh lib/builder/bundleDependencies.sh",
+    "updateVersion": "node lib/builder/updateVersion.js",
+    "prepublishOnly": "npm run checkForDebuggers && npm run bundleDependencies && npm run updateVersion && npm run genI18nConfigsAndFiles",
+    "preinstall": "node lib/builder/preinstall.js",
+    "postinstall": "node build/runscript.js $INIT_CWD && node lib/builder/loader.js",
+    "precommit": "npm run checkForDebuggers",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "sync:dependencies": "node ./synchronizer/syncDependencies.js",
+    "prepack": "npm run sync:dependencies",
+    "amend": "git commit . --amend -m \"$(git log -1 --pretty=%B)\"",
+    "changeVersionAndCommit": "npm run updateVersion && npm run amend",
+    "postrelease": "npm run changeVersionAndCommit",
+    "beta-release": "standard-version --prerelease beta",
+    "postbeta-release": "npm run changeVersionAndCommit",
+    "start": "lyte serve --eslint=true",
+    "reset": "rm -rf testApp/dist testApp/node_modules node_modules package-lock.json && npm install --registry http://integ-docker:4873"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run checkForDebuggers"
+    }
+  },
+  "bin": {
+    "build-lyte-editor": "./lib/builder/nonLyteAppBuilder.sh"
+  },
+  "author": "Vignesh P <vignesh.prv@zohocorp.com>",
+  "license": "ISC",
+  "flatDependencies": [
+    "lyte",
+    "lyte-dom",
+    "lyte-ui-component"
+  ],
+  "dependencies": {
+    "inquirer": "8.0.0",
+    "js-beautify": "1.13.0",
+    "monaco-editor": "^0.27.0",
+    "semver": "7.3.4"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.16.0",
+    "glob": "7.2.0",
+    "husky": "4.3.6",
+    "jasmine": "3.8.0",
+    "jasmine-core": "3.8.0",
+    "live-server": "1.2.1",
+    "lytmus": "1.0.0",
+    "standard-version": "^9.3.1"
+  },
+  "tempDependencies": {
+    "lyte": "3.0.0",
+    "lyte-dom": "2.0.4",
+    "lyte-ui-component": "3.9.0"
+  },
+  "addons": [
+    "lyte-editor",
+    "lyte-ui-component"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "customDocFormatter": [
+    "lib/dependencies/miscellaneous/beautify.js",
+    "lib/plugins/formatters/"
+  ],
+  "initialFiles": [
+    "lib/dependencies/miscellaneous/common-utils.js",
+    "lib/scripts/_led.js",
+    "lib/scripts/globalPaths.js",
+    "lib/scripts/errorHandler.js",
+    "lib/builtInData/errors.js",
+    "lib/scripts/checkType.js",
+    "lib/scripts/throw.js",
+    "lib/scripts/enums.js",
+    "lib/scripts/loadResources.js",
+    "lib/plugins/langConfigs/"
+  ],
+  "jsForNonLyteApp": [
+    "lib/builder/dependencies.js",
+    "lib/builder/loadDependencies.js"
+  ],
+  "baseJsFiles": [
+    "lib/api/",
+    "lib/scripts/debounce.js",
+    "lib/scripts/libCache.js",
+    "lib/scripts/createArgsCache.js",
+    "lib/scripts/htmlCompletionsParser.js",
+    "lib/scripts/libParser.js",
+    "lib/scripts/toolsObjGenerator.js",
+    "lib/scripts/customStyle.js",
+    "lib/scripts/compilerOptions.js",
+    "lib/scripts/prerequisitesForAction.js",
+    "lib/scripts/updateEditorLayout.js",
+    "lib/builtInData/stateData.js",
+    "lib/builtInData/htmlCompletionProvider.js",
+    "lib/builtInData/lyteCoreData.js",
+    "lib/builtInData/lyteUiComponentData.js",
+    "components/helpers/",
+    "components/javascript/lyte-editor.js",
+    "components/javascript/lyte-editor-toolbar.js"
+  ]
+}

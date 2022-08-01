@@ -1,6 +1,11 @@
 /* Default theme imported */
 /* Loading theme in configuration */
 /* Themes of components */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */
+/* Default theme imported */
+/* Loading theme in configuration */
 /* rtl files loading */
 lyte-dual-listbox {
   display: block;
@@ -279,8 +284,3 @@ lyte-lb-collapse::before {
     background: #333;
   }
 }
-/* Default theme imported */
-/* Loading theme in configuration */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */

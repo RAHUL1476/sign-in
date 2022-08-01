@@ -1,0 +1,220 @@
+// Mixins
+.toolbarThemeCss(@bg, @hoverBg, @fontColor, @borderColor, @svgPath, @activeBg) {
+  lyte-editor-toolbar {
+    background   : @bg;
+  }
+
+  .lyteEditorToolItem {
+    color: @fontColor;
+
+    &.active {
+      background: @activeBg;
+    }
+
+    &:hover:not(.preventHover) {
+      background: @hoverBg;
+    }
+
+    &>*:not(.custom) {
+      background-image: @svgPath;
+    }
+
+    .lyteEditorTool-fontSize {
+      lyte-drop-button {
+        color: @fontColor;
+      }
+
+    }
+  }
+}
+
+.dropOptionsThemeCss(@bg, @hoverBg, @fontColor) {
+  lyte-drop-body {
+    padding: 0px;
+  }
+
+  lyte-drop-item {
+    color     : @fontColor;
+    background: @bg;
+
+    &:hover {
+      background: @hoverBg;
+    }
+
+    &[selected=true]::before {
+      filter: invert(1);
+    }
+  }
+}
+
+//Actual code
+.lyteEditorTool-toggleDarkMode {
+  input[type=checkbox].on-off-sw:focus+.lyteCheckSwitch {
+    box-shadow: none;
+  }
+
+  input[type=checkbox].on-off-sw:checked+.lyteCheckSwitch {
+    background: #45BB89;
+    box-shadow: none;
+  }
+}
+
+.toolbarThemeCss(@bg-lt, @hoverBg-lt, @fontColor-lt, @borderColor-lt, @svgPath-lt, @activeBg-lt);
+
+&.darkMode {
+  .toolbarThemeCss(@bg-dk, @hoverBg-dk, @fontColor-dk, @borderColor-dk, @svgPath-dk, @activeBg-dk);
+
+  .lyteEditorTool-fontSize lyte-dropdown lyte-icon.dropdown {
+    filter: invert(1);
+  }
+}
+
+lyte-editor-toolbar {
+  display        : flex;
+  justify-content: space-between;
+
+  .leftAlignedTools,
+  .rightAlignedTools {
+    display: flex;
+  }
+
+  .lyteEditorToolItem {
+    display    : flex;
+    align-items: center;
+    cursor     : pointer;
+    height     : 35px;
+    padding    : 0px 7px 0px 7px;
+
+    .custom span {
+      text-transform: capitalize;
+    }
+
+    &>*:not(.custom) {
+      height: 18px;
+      width : 18px;
+    }
+
+    .lyteEditorTool-copy {
+      background-position: -75px -15px;
+      transform          : scale(0.9);
+    }
+
+    .lyteEditorTool-cut {
+      background-position: -101px -15px;
+    }
+
+    .lyteEditorTool-duplicate {
+      background-position: -150px -15px;
+
+    }
+
+    .lyteEditorTool-delete {
+      background-position: -125px -15px;
+
+    }
+
+    .lyteEditorTool-find {
+      background-position: -176px -15px;
+
+    }
+
+    .lyteEditorTool-undo {
+      background-position: -335px -15px;
+
+    }
+
+    .lyteEditorTool-redo {
+      background-position: -314px -15px;
+
+    }
+
+    .lyteEditorTool-indent {
+      background-position: -235px -15px;
+
+    }
+
+    .lyteEditorTool-outdent {
+      background-position: -260px -15px;
+
+    }
+
+    .lyteEditorTool-help {
+      background-position: -208px -15px;
+
+    }
+
+    .lyteEditorTool-comment {
+      background-position: -51px -15px;
+
+    }
+
+    .lyteEditorTool-toggleDarkMode {
+      width      : auto;
+      display    : flex;
+      align-items: center;
+
+      &>span {
+        padding-right: 10px;
+      }
+
+      lyte-checkbox {
+        transform: scale(0.9);
+      }
+    }
+
+    .lyteEditorTool-format {
+      background-position: -25px -15px;
+
+    }
+
+    .lyteEditorTool-formatOnType {
+      background-position: -385px -15px;
+      transform          : scale(1.2);
+    }
+
+    .lyteEditorTool-reset {
+      width: auto;
+    }
+
+    .lyteEditorTool-toggleWrap {
+      background-position: -286px -15px;
+      width              : 22px;
+    }
+
+    .lyteEditorTool-keyBindings {
+      background-position: -359px -16px;
+      width              : 19px;
+    }
+
+    .lyteEditorTool-fontSize {
+      display    : flex;
+      width      : auto;
+      align-items: center;
+
+      &>span {
+        padding: 0px 5px;
+        cursor : default;
+      }
+
+      lyte-dropdown .lyteDummyEventContainer:focus lyte-drop-button,
+      lyte-dropdown .lyteDummyEventContainer:focus lyte-drop-button:hover,
+      lyte-dropdown lyte-drop-button {
+        background: transparent;
+        border    : none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.toolTipCapCase {
+  text-transform: capitalize;
+}
+
+.lyteEditorFontOptions {
+  .dropOptionsThemeCss(@bg-lt, @hoverBg-lt, @fontColor-lt);
+
+  &.darkMode {
+    .dropOptionsThemeCss(@bg-dk, @hoverBg-dk, @fontColor-dk);
+  }
+}

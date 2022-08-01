@@ -1114,22 +1114,22 @@ Warning : File not found /Users/rahul-pt5622/Documents/test2/welc/node_modules/@
 CliLocation :/Users/rahul-pt5622/Documents/test2/welc/node_modules/@zoho/lyte-cli
  CliVersion 3.3.1
 Building time of addons : 0 s
-Building time of copyAppDir : 0.08 s
+Building time of copyAppDir : 0.089 s
 Building components ....
 Searching for syntax errors.....
 Finding the unclosed tags compilation over
-[Time] => find unclosedTags => 0.093 s
+[Time] => find unclosedTags => 0.051 s
 Running compilerule ...
-[Time] => Convert Lyte syntax => 0.211 s
+[Time] => Convert Lyte syntax => 0.177 s
 Creating new browser instance 
 New browser instance launched
-browser Endpoint ws://127.0.0.1:54271/devtools/browser/5ddf6c3a-aa6c-41c9-a397-6f105cc243aa
+browser Endpoint ws://127.0.0.1:49854/devtools/browser/c23c5c53-9a38-4bcd-967e-db6041a4053e
 Browser launched
 page opened
 Post method request get caught with url/post
-Time taken for end call back be 3.431 s
-Callback function called 0.007 slyte-alert,lyte-badge,lyte-accordion,lyte-autocomplete,lyte-banner,lyte-board,lyte-button-group,lyte-breadcrumb,lyte-carousel,lyte-calculator,lyte-calendar,lyte-card,lyte-clock,lyte-checkbox-group,lyte-checkbox,lyte-colorbox,lyte-combobox,lyte-connect-item,lyte-connect,lyte-dateselect,lyte-counter,lyte-daterangepicker,lyte-datetime-input,lyte-drawer,lyte-dropdown,lyte-dragdrop,lyte-dual-listbox,lyte-emoji,lyte-expresstable,lyte-fileupload,lyte-gridstack,lyte-hovercard,lyte-grouper,lyte-kanbanview,lyte-input,lyte-loader,lyte-menu,lyte-messagebox,lyte-modal,lyte-multislider,lyte-navigator,lyte-nav,lyte-number,lyte-progressbar,lyte-popover,lyte-radiobutton-group,lyte-radiobutton,lyte-rating,lyte-search,lyte-signature,lyte-slider,lyte-splitter,lyte-button,lyte-step,lyte-table,lyte-svg,lyte-tag,lyte-tabs,lyte-timeline,lyte-text,lyte-tooltip,lyte-tour-hint,lyte-tour-step,lyte-tour,lyte-tree,lyte-video,lyte-voicenote,lyte-avatar-navigator-item,lyte-wormhole,table-tree,lyte-avatar-navigator,lyte-layout,lyte-layout-row,colorpicker-ui,lyte-comment,lyte-colorpicker,lyte-note-editor,lyte-notecomp,lyte-reaction-view
-Time to end the dynamic nodes3.438 s
+Time taken for end call back be 2.417 s
+Callback function called 0.005 slyte-accordion,lyte-alert,lyte-autocomplete,lyte-badge,lyte-board,lyte-banner,lyte-breadcrumb,lyte-button,lyte-checkbox,lyte-calculator,lyte-checkbox-group,lyte-button-group,lyte-card,lyte-calendar,lyte-combobox,lyte-colorbox,lyte-clock,lyte-connect-item,lyte-counter,lyte-datetime-input,lyte-dateselect,lyte-connect,lyte-drawer,lyte-daterangepicker,lyte-emoji,lyte-gridstack,lyte-dragdrop,lyte-hovercard,lyte-grouper,lyte-fileupload,lyte-kanbanview,lyte-expresstable,lyte-dual-listbox,lyte-modal,lyte-dropdown,lyte-messagebox,lyte-nav,lyte-multislider,lyte-menu,lyte-input,lyte-number,lyte-progressbar,lyte-slider,lyte-splitter,lyte-rating,lyte-search,lyte-radiobutton-group,lyte-popover,lyte-step,lyte-svg,lyte-loader,lyte-tag,lyte-timeline,lyte-tabs,lyte-text,lyte-tour,lyte-tour-hint,lyte-tour-step,table-tree,lyte-voicenote,lyte-wormhole,lyte-table,lyte-signature,lyte-tooltip,lyte-tree,lyte-avatar-navigator-item,lyte-colorpicker,lyte-carousel,lyte-video,lyte-navigator,lyte-radiobutton,lyte-note-editor,lyte-avatar-navigator,colorpicker-ui,lyte-layout,lyte-comment,lyte-layout-row,lyte-notecomp,lyte-reaction-view
+Time to end the dynamic nodes2.423 s
 Generating dist components...
 
 Warnings in the component :lyte-calendar
@@ -1144,24 +1144,24 @@ Warnings in the component :lyte-dual-listbox
 Warnings in the component :lyte-modal
 		Invalid component names : calculateHW
 
-Warnings in the component :lyte-popover
-		Invalid component names : calculateHW
-
 Warnings in the component :lyte-rating
 		Invalid component names : starVB,lineStarVB,heartVB,lineHeartVB
+
+Warnings in the component :lyte-popover
+		Invalid component names : calculateHW
 
 Warnings in the component :colorpicker-ui
 		Invalid component names : poxYHue,poxXHue,advCPDimensions,posXOpacity
 
-Time to end processing template0.051 s
-Building time of components : 3.841 s
+Time to end processing template0.036 s
+Building time of components : 2.727 s
 Building models ..............
-
-Consolidated file created in the ../../../dist/addons/@zoho/lyte-ui-component/dist/data-store/models/view.js
 
 Consolidated file created in the ../../../dist/addons/@zoho/lyte-ui-component/dist/data-store/models/navigation.js
 
-Building time of models : 0.024 s
+Consolidated file created in the ../../../dist/addons/@zoho/lyte-ui-component/dist/data-store/models/view.js
+
+Building time of models : 0.006 s
 Building helpers .....
 [Copy] components/helpers => ../../../dist/addons/@zoho/lyte-ui-component/dist/components/helpers
 
@@ -1190,7 +1190,7 @@ Consolidated file created in the ../../../dist/addons/@zoho/lyte-ui-component/di
 
 Consolidated file created in the ../../../dist/addons/@zoho/lyte-ui-component/dist/components/lyte-ui-components.js
 
-Building time of consolidate : 0.077 s
-Total Building Time : 4.091 s
+Building time of consolidate : 0.059 s
+Total Building Time : 2.952 s
 Building completed
 Build sucesss

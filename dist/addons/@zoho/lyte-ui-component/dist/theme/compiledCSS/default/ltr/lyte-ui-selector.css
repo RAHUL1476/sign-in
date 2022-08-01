@@ -1,6 +1,11 @@
 /* Default theme imported */
 /* Loading theme in configuration */
 /* Themes of components */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */
+/* Default theme imported */
+/* Loading theme in configuration */
 /* rtl files loading */
 .lyteSelectionWrapperBox {
   position: relative;
@@ -119,8 +124,3 @@
 .lyteSelectorLabelBottom {
   top: 100%;
 }
-/* Default theme imported */
-/* Loading theme in configuration */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */

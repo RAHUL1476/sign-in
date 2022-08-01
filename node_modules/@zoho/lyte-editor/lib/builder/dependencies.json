@@ -1,0 +1,48 @@
+{
+    "lyte": [
+        "custom-elements-es5-adapter.js",
+        "polyfill-bundle.js",
+        "lyte-es5.js"
+    ],
+    "lyte-dom": {
+        "_loadInOrder" : true,
+        "_filesToLoad" : [
+            "lyte-dom.min.js",
+            "lyte-dom-migrate.min.js"
+        ]
+    },
+    "lyte-ui-component": {
+        "_needs":["lyte","lyte-dom"],
+        "_dir": "addons/lyte-ui-component/dist/",
+        "_justCopy":[
+            "theme/compiledCSS/images/"
+        ],
+        "helper": [
+            "components/helpers/helpers.js"
+        ],
+        "I18n":[
+            "I18n/en_US.js"
+        ],
+        "lyte-dropdown": [
+            "components/lyte-dropdown.js",
+            "theme/compiledCSS/default/ltr/lyte-ui-dropdown.css"
+        ],
+        "lyte-tooltip": [
+            "components/lyte-tooltip.js",
+            "theme/compiledCSS/default/ltr/lyte-ui-tooltip.css"
+        ],
+        "lyte-checkbox": [
+            "components/lyte-checkbox.js",
+            "theme/compiledCSS/default/ltr/lyte-ui-checkbox.css"
+        ],
+        "lyte-wormhole": [
+            "components/lyte-wormhole.js"
+        ]
+    },
+    "lyte-editor":{
+        "_needs":["lyte","lyte-dom","lyte-ui-component"],
+        "lyte-editor-app":[
+            "lyte-editor-app.js"
+        ]
+    }
+}

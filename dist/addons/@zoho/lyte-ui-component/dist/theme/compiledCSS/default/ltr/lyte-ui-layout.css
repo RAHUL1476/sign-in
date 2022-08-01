@@ -1,3 +1,9 @@
+/* Default theme imported */
+/* Loading theme in configuration */
+/* Themes of components */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */
 .lytecol-yield {
   display: block;
   width: 100%;
@@ -6,9 +12,3 @@
 .lyterow-yield {
   overflow: hidden;
 }
-/* Default theme imported */
-/* Loading theme in configuration */
-/* Themes of components */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */

@@ -1,0 +1,248 @@
+.lyteEditorTool-toggleDarkMode input[type=checkbox].on-off-sw:focus + .lyteCheckSwitch {
+  box-shadow: none;
+}
+.lyteEditorTool-toggleDarkMode input[type=checkbox].on-off-sw:checked + .lyteCheckSwitch {
+  background: #45BB89;
+  box-shadow: none;
+}
+lyte-editor-toolbar {
+  background: #ffffff;
+}
+.lyteEditorToolItem {
+  color: #222222;
+}
+.lyteEditorToolItem.active {
+  background: #e1e7f0;
+}
+.lyteEditorToolItem:hover:not(.preventHover) {
+  background: #e1e7f0;
+}
+.lyteEditorToolItem > *:not(.custom) {
+  background-image: url('../images/LyteEditorIcons_LightMode.svg');
+}
+.lyteEditorToolItem .lyteEditorTool-fontSize lyte-drop-button {
+  color: #222222;
+}
+.darkMode lyte-editor-toolbar {
+  background: #3F4658;
+}
+.darkMode .lyteEditorToolItem {
+  color: #ffffff;
+}
+.darkMode .lyteEditorToolItem.active {
+  background: #545C71;
+}
+.darkMode .lyteEditorToolItem:hover:not(.preventHover) {
+  background: #545C71;
+}
+.darkMode .lyteEditorToolItem > *:not(.custom) {
+  background-image: url('../images/LyteEditorIcons_DarkMode.svg');
+}
+.darkMode .lyteEditorToolItem .lyteEditorTool-fontSize lyte-drop-button {
+  color: #ffffff;
+}
+.darkMode .lyteEditorTool-fontSize lyte-dropdown lyte-icon.dropdown {
+  filter: invert(1);
+}
+lyte-editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+lyte-editor-toolbar .leftAlignedTools,
+lyte-editor-toolbar .rightAlignedTools {
+  display: flex;
+}
+lyte-editor-toolbar .lyteEditorToolItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 35px;
+  padding: 0px 7px 0px 7px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .custom span {
+  text-transform: capitalize;
+}
+lyte-editor-toolbar .lyteEditorToolItem > *:not(.custom) {
+  height: 18px;
+  width: 18px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-copy {
+  background-position: -75px -15px;
+  transform: scale(0.9);
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-cut {
+  background-position: -101px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-duplicate {
+  background-position: -150px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-delete {
+  background-position: -125px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-find {
+  background-position: -176px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-undo {
+  background-position: -335px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-redo {
+  background-position: -314px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-indent {
+  background-position: -235px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-outdent {
+  background-position: -260px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-help {
+  background-position: -208px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-comment {
+  background-position: -51px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-toggleDarkMode {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-toggleDarkMode > span {
+  padding-right: 10px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-toggleDarkMode lyte-checkbox {
+  transform: scale(0.9);
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-format {
+  background-position: -25px -15px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-formatOnType {
+  background-position: -385px -15px;
+  transform: scale(1.2);
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-reset {
+  width: auto;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-toggleWrap {
+  background-position: -286px -15px;
+  width: 22px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-keyBindings {
+  background-position: -359px -16px;
+  width: 19px;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-fontSize {
+  display: flex;
+  width: auto;
+  align-items: center;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-fontSize > span {
+  padding: 0px 5px;
+  cursor: default;
+}
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-fontSize lyte-dropdown .lyteDummyEventContainer:focus lyte-drop-button,
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-fontSize lyte-dropdown .lyteDummyEventContainer:focus lyte-drop-button:hover,
+lyte-editor-toolbar .lyteEditorToolItem .lyteEditorTool-fontSize lyte-dropdown lyte-drop-button {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.toolTipCapCase {
+  text-transform: capitalize;
+}
+.lyteEditorFontOptions lyte-drop-body {
+  padding: 0px;
+}
+.lyteEditorFontOptions lyte-drop-item {
+  color: #222222;
+  background: #ffffff;
+}
+.lyteEditorFontOptions lyte-drop-item:hover {
+  background: #e1e7f0;
+}
+.lyteEditorFontOptions lyte-drop-item[selected=true]::before {
+  filter: invert(1);
+}
+.lyteEditorFontOptions.darkMode lyte-drop-body {
+  padding: 0px;
+}
+.lyteEditorFontOptions.darkMode lyte-drop-item {
+  color: #ffffff;
+  background: #3F4658;
+}
+.lyteEditorFontOptions.darkMode lyte-drop-item:hover {
+  background: #545C71;
+}
+.lyteEditorFontOptions.darkMode lyte-drop-item[selected=true]::before {
+  filter: invert(1);
+}
+lyte-editor-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "LatoRegular";
+  font-weight: 300;
+  font-size: 13px;
+  border-top: 1px solid black;
+}
+lyte-editor-layout lyte-yield {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: "LatoBold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://webfonts.zohowebstatic.com/latobold/font.woff2) format('woff2');
+}
+@font-face {
+  font-family: "LatoRegular";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://webfonts.zohowebstatic.com/latoregular/font.woff2) format('woff2');
+}
+@font-face {
+  font-family: "LatoLight";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://webfonts.zohowebstatic.com/latolight/font.woff2) format('woff2');
+}
+lyte-editor {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: "LatoRegular";
+  font-weight: 300;
+  font-size: 13px;
+}
+lyte-editor iframe {
+  border: none;
+}
+lyte-editor .colorizeElement {
+  margin: 0px;
+  height: 100%;
+}
+lyte-editor .colorizeElement code {
+  display: block;
+  height: 100%;
+}
+.lyteEditor {
+  width: 100%;
+  flex: 1 1 100%;
+  position: relative;
+}
+.lyteEditor .basicEditor,
+.lyteEditor .diffEditor {
+  visibility: hidden;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.lyteEditor .basicEditor.activeEditor,
+.lyteEditor .diffEditor.activeEditor {
+  visibility: visible;
+  z-index: 5;
+}

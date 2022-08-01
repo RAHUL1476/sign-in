@@ -15,7 +15,8 @@
   "pretender": "^3.4.7"
  },
  "addons": [
-  "@zoho/lyte-ui-component"
+  "@zoho/lyte-ui-component",
+  "@zoho/lyte-editor"
  ],
  "resolution": {}
 }

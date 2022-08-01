@@ -1,11 +1,6 @@
 /* Default theme imported */
 /* Loading theme in configuration */
 /* Themes of components */
-/* Loading custom themes */
-/* import theme overrides */
-/* import custom css */
-/* Default theme imported */
-/* Loading theme in configuration */
 /* rtl files loading */
 /* Loading custom themes */
 /* Make changes to override predefined styles */
@@ -88,7 +83,7 @@ lyte-slider .lyteSlide {
   text-align: center;
   display: inline-block;
   position: absolute;
-  margin-right: -9px;
+  margin-left: -9px;
   left: 20px;
 }
 .lyteScaleLine span:first-child {
@@ -151,17 +146,17 @@ lyte-slider .lyteSlide {
   left: -4px;
 }
 .lyteVertical .lyteSquare.lyteSliderHandler {
-  right: -4px;
+  left: -4px;
 }
 .lyteVertical.lyteRangeSlider .lyteScaleLine .lyteScalLable {
   position: absolute;
   padding-top: 0;
   top: -10px;
-  right: 10px;
+  left: 10px;
 }
 .lyteVertical.lyteRangeSlider .lyteArrow .lyteScaleLine .lyteScalLable {
   top: -10px;
-  right: 10px;
+  left: 10px;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler,
 .lyteVertical .lyteArrowLeft.lyteSliderHandler {
@@ -174,12 +169,12 @@ lyte-slider .lyteSlide {
   position: absolute;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler {
-  border-left-width: 1px;
-  right: -4px;
+  border-right-width: 1px;
+  left: -4px;
 }
 .lyteVertical .lyteArrowLeft.lyteSliderHandler {
-  border-right-width: 1px;
-  right: 0;
+  border-left-width: 1px;
+  left: 0;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler::after,
 .lyteVertical .lyteArrow.lyteSliderHandler::before,
@@ -200,12 +195,12 @@ lyte-slider .lyteSlide {
   margin-top: -2px;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler::before {
-  border-right-color: #4495e4;
-  right: 10px;
-}
-.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
   border-left-color: #4495e4;
   left: 10px;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::before {
+  border-right-color: #4495e4;
+  right: 10px;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler::after,
 .lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
@@ -214,18 +209,18 @@ lyte-slider .lyteSlide {
   margin-top: 0;
 }
 .lyteVertical .lyteArrow.lyteSliderHandler::after {
-  right: 9px;
-  border-right-color: #fff;
-}
-.lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
   left: 9px;
   border-left-color: #fff;
+}
+.lyteVertical .lyteArrowLeft.lyteSliderHandler::after {
+  right: 9px;
+  border-right-color: #fff;
 }
 .lyteVertical.lyteRangeSlider .lyteScaleOption {
   position: absolute;
   top: 0;
   /*  Altering this may cause alignment issue */
-  right: 15px;
+  left: 15px;
   width: 10px;
   height: 100%;
 }
@@ -234,12 +229,12 @@ lyte-slider .lyteSlide {
   height: 18px;
   position: absolute;
   margin-top: 0;
-  margin-right: -6px;
+  margin-left: -6px;
   top: 20px;
-  right: 6px;
+  left: 6px;
 }
 .lyteVertical.lyteRangeSlider .lyteArrow .lyteScaleLine {
-  right: 8px;
+  left: 8px;
 }
 .lyteVertical .lyteScaleLine span:first-child {
   height: 2px;
@@ -249,11 +244,11 @@ lyte-slider .lyteSlide {
 }
 .lyteVertical.lyteRangeSlider .lyteArrowLeft .lyteScaleLine .lyteScalLable {
   top: -8px;
-  right: unset;
-  left: 10px;
+  left: unset;
+  right: 10px;
 }
 .lyteVertical.lyteRangeSlider .lyteArrowLeft.lyteScaleOption {
-  right: -15px;
+  left: -15px;
 }
 /*  Vertical slider related CSS  Ends  */
 /* import theme overrides - styles */
@@ -262,3 +257,8 @@ lyte-slider .lyteSlide {
  * This will be added to the end of the styles/slider.less file
  */
 /* Slider CSS ENDS  */
+/* Default theme imported */
+/* Loading theme in configuration */
+/* Loading custom themes */
+/* import theme overrides */
+/* import custom css */
